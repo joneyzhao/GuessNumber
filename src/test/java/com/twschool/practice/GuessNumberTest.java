@@ -34,12 +34,12 @@ public class GuessNumberTest {
     }
     @Test
     public void should_return_0A4B_when_input_nums_are_all_right_but_positions_are_all_wrong(){
-//        //given
-//        GuessNumber guessNumber = new GuessNumber();
-//        //when
-//        String resultString = guessNumber.getGuessResult("1234", "4321");
-//        //then
-//        assertEquals("0A4B", resultString);
+        //given
+        GuessNumber guessNumber = new GuessNumber();
+        //when
+        String resultString = guessNumber.getGuessResult("1234", "4321");
+        //then
+        assertEquals("0A4B", resultString);
     }
     @Test
     public void should_return_0A3B_when_input_nums_are_not_all_right_but_positions_all_are_wrong(){
