@@ -16,6 +16,12 @@ public class GuessNumberTest {
     }
     @Test
     public void should_return_2A2B_when_input_nums_are_all_right_but_positions_are_not_all_right(){
+        //given
+        GuessNumber guessNumber = new GuessNumber();
+        //when
+        String resultString = guessNumber.getGuessResult("1,2,3,4", "1,3,2,4");
+        //then
+        assertEquals("2A2B", resultString);
     }
     @Test
     public void should_return_1A2B_when_input_nums_and_positions_are_not_all_right(){
